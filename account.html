@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Taskr</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/Users/bgoodman/cs465/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/Users/bgoodman/cs465/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="navbar-fixed">
+    <nav id="nav-bar" class="white" role="navigation">
+        <div class="nav-wrapper">
+            <a href="/Users/bgoodman/cs465/index.html" class="btn-floating btn-large blue darken-1">
+                <i class="large material-icons">keyboard_arrow_left</i>
+            </a>
+            <a id="logo-container" href="/Users/bgoodman/cs465/index.html" class="brand-logo center">Account
+                Info</a>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <ul class="collapsible" data-collapsible="accordion">
+        <li>
+            <div class="collapsible-header">
+                <span><i class="material-icons">done</i></span>
+                <span>My To Do's</span>
+            </div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <span><i class="material-icons">sort_all</i></span>
+                <span>Tasks I've Posted</span>
+            </div>
+            <div class="collapsible-body">
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">
+                            <span><i class="material-icons">done_all</i></span>
+                            <span>Task 1</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <div class="col s6">
+                                    <p>
+                                        Task Title: MALK
+                                        <br>
+                                        Status: Finished
+                                    </p>
+                                </div>
+                                <div class="col s6" style="padding-top:25px;">
+                                    <a href="#" id="pay-button"
+                                       class="btn-large waves-effect waves-light blue darken-1 right">Pay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <span><i class="material-icons">clear</i></span>
+                            <span>Task 2</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <div class="col s6">
+                                    <p>
+                                        Task Title: Walk dog
+                                        <br>
+                                        Status: Unassigned
+                                    </p>
+                                </div>
+                                <div class="col s6" style="padding-top:25px;">
+                                    <a href="#" id="pay-button"
+                                       class="btn-large waves-effect waves-light blue darken-1 right">See Offers</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <span><i class="material-icons">clear</i></span>
+                            <span>Task 3</span>
+                        </div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <div class="col s6">
+                                    <p>
+                                        Task Title: Clean house
+                                        <br>
+                                        Status: In Progress
+                                        <br>
+                                        <a href="#"><i class="material-icons">email</i></a>
+                                        <a href="#"><i class="material-icons">phone</i></a>
+                                    </p>
+                                </div>
+                                <div class="col s6" style="padding-top:25px;">
+                                    <a href="#" id="pay-button"
+                                       class="btn-large waves-effect waves-light blue darken-1 right disabled">Pay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/Users/bgoodman/cs465/js/init.js"></script>
+<script src="/Users/bgoodman/cs465/js/materialize.js"></script>
+</body>
+</html>
