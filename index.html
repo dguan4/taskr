@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Taskr</title>
+        <title>taskr</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -17,31 +17,26 @@
         <div class="col s12">
           <div class="card" style="min-height: 500px">
             <div class="card-content white-text">
-                <h1 class="card-title center-align" style="color:black">Taskr</h1>
+                <h1 class="card-title center-align" style="color:black" id="card-title">taskr</h1>
             </div>
             <div class="row">
-            <form class="col s12">
+            <form class="col s12" style="color: red">
+              <div class="card"  id="login">
+              <div class="card-content white-text">
               <div class="row">
                 <div class="input-field col s6">
-                  <input id="first_name" type="text" class="validate">
+                  <input id="first_name" type="text">
                   <label for="first_name">Username</label>
-                    <a class="waves-effect waves-light btn">Signup</a>
+                    <a class="waves-effect waves-light btn blue darken-1">Signup</a>
+                    <br> 
+                    <a href="#" style="align: right">Login</a>
                 </div>
                 <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
+                  <input id="last_name" type="text">
                   <label for="last_name">Password</label>
                 </div>
               </div>
-              <div class="row">
-                <div class="input-field col s6">
-                  <input id="first_name" type="text" class="validate">
-                  <label for="first_name">Username</label>
-                    <a class="waves-effect waves-light btn">Login</a>
-                </div>
-                <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Password</label>
-                </div>
+              </div>
               </div>
             </form>
           </div> 
