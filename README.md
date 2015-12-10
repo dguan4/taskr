@@ -68,3 +68,5 @@ Chrome 35+, Firefox 31+, Safari 7+, IE 10+
 
 ## Contributing
 [Please read CONTRIBUTING.md for more information](CONTRIBUTING.md)
+
+Our readme is troll
