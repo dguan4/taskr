@@ -12,38 +12,33 @@
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 </head>
 <style>
-.login-screen {
-    height: 100vh;
-  background: url(img/login.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-.taskr-logo {
-    font-size: 30px !important;
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: .7;
-}
+    .login-screen {
+        height: 100vh;
+        background: url(img/login.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 </style>
 
 <body>
-<div class = "index">
+<div class="index">
     <div class="navbar-fixed">
         <nav id="nav-bar" class="white" role="navigation">
             <div class="nav-wrapper">
+                <ul class="user-details">
+                </ul>
                 <a id="logo-container" href="#" class="brand-logo center">taskr</a>
                 <ul class="right">
-                    <li class="black-text" style="padding-right:20px; padding-left:20px;">
+                    <li class="nav-button tooltipped"
+                        data-position="bottom" data-delay="300" data-tooltip="My Account">
                         <a href="#" class="account-info btn-floating btn-large blue darken-1" id="account-info-btn">
                             <i class="large material-icons">account_circle</i>
                         </a>
                     </li>
-                    <li style="padding-right:20px; padding-left:20px;">
+                    <li class="nav-button tooltipped"
+                        data-position="bottom" data-delay="300" data-tooltip="New Task">
                         <a href="#" class="add-task btn-floating btn-large blue darken-1">
                             <i class="large material-icons">mode_edit</i>
                         </a>
@@ -52,275 +47,216 @@
             </div>
         </nav>
     </div>
-    <div class="container" id = "task-feed">
-        <!--
-        <div class="section text-darken-1">
-            <h5 style="float: left; width: 50%;">Task Title: Lel</h5>
-            <h5 style="float: right; width: 50%; text-align: right;">Posted On: 23423432</h5>
-            <span>Deadline</span>
-            <span class="user">User: Bob</span>
-            <span>Blahblahblah</span>
+    <div class="container" id="task-feed">
+        <!-- Tasks go here -->
+    </div>
+    <!-- Modal Structure -->
+    <div id="task-modal" class="blue-text text-darken-1 modal bottom-sheet">
+        <div class="modal-content">
+            <h4>Task Bid</h4>
 
-            <p>Offer: $MUCHO</p>
-
-            <p>Details: <a href="#"><i class="material-icons">more_horiz</i></a></p>
+            <p>How much would you like to be compensated for this task? Keep in mind, the closer you are to the
+                suggested offer, the more likely the user will accept your bid!</p>
+            <input placeholder="$7.50" type="text">
         </div>
-        <div class="divider"></div>
-        <div class="section text-darken-1">
-            <h5 style="float: left; width: 50%;">Task Title: Lel</h5>
-            <h5 style="float: right; width: 50%; text-align: right;">Posted On: 23423432</h5>
-            <span>Deadline</span>
-            <span class="user">User: Bob</span>
-            <span>Blahblahblah</span>
-
-            <p>Offer: $MUCHO</p>
-
-            <p>Details: <a href="#"><i class="material-icons">more_horiz</i></a></p>
+        <div class="modal-footer">
+            <a href="#"
+               class="btn-large blue darken-1 white-text modal-action modal-close waves-effect waves-blue btn-flat">Bid!</a>
         </div>
-        <div class="divider"></div>
-        <div class="section text-darken-1">
-            <h5 style="float: left; width: 50%;">Task Title: Lel</h5>
-            <h5 style="float: right; width: 50%; text-align: right;">Posted On: 23423432</h5>
-            <span>Deadline</span>
-            <span class="user">User: Bob</span>
-            <span>Blahblahblah</span>
-
-            <p>Offer: $MUCHO</p>
-
-            <p>Details: <a href="#"><i class="material-icons">more_horiz</i></a></p>
-        </div>
-        <div class="divider"></div>
-        <div class="section text-darken-1">
-            <h5 style="float: left; width: 50%;">Task Title: Lel</h5>
-            <h5 style="float: right; width: 50%; text-align: right;">Posted On: 23423432</h5>
-            <span>Deadline</span>
-            <span class="user">User: Bob</span>
-            <span>Blahblahblah</span>
-
-            <p>Offer: $MUCHO</p>
-
-            <p>Details: <a href="#"><i class="material-icons">more_horiz</i></a></p>
-        </div>
-        <div class="divider"></div>
-        <div class="section text-darken-1">
-            <h5 style="float: left; width: 50%;">Task Title: Lel</h5>
-            <h5 style="float: right; width: 50%; text-align: right;">Posted On: 23423432</h5>
-            <span>Deadline</span>
-            <span class="user">User: Bob</span>
-            <span>Blahblahblah</span>
-
-            <p>Offer: $MUCHO</p>
-
-            <p>Details: <a href="#"><i class="material-icons">more_horiz</i></a></p>
-        </div>
-        <div class="divider"></div>
-        <div class="section text-darken-1">
-            <h5 style="float: left; width: 50%;">Task Title: Lel</h5>
-            <h5 style="float: right; width: 50%; text-align: right;">Posted On: 23423432</h5>
-            <span>Deadline</span>
-            <span class="user">User: Bob</span>
-            <span>Blahblahblah</span>
-
-            <p>Offer: $MUCHO</p>
-
-            <p>Details: <a href="#"><i class="material-icons">more_horiz</i></a></p>
-        </div>
-        <div class="divider"></div>
-        <div class="section text-darken-1">
-            <h5 style="float: left; width: 50%;">Task Title: Lel</h5>
-            <h5 style="float: right; width: 50%; text-align: right;">Posted On: 23423432</h5>
-            <span>Deadline</span>
-            <span class="user">User: Bob</span>
-            <span>Blahblahblah</span>
-
-            <p>Offer: $MUCHO</p>
-
-            <p>Details: <a href="#"><i class="material-icons">more_horiz</i></a></p>
-        </div>
-        -->
     </div>
 </div>
 
-<div class = "account">
-    <div class="navbar-fixed">
-    <nav id="nav-bar" class="white" role="navigation">
-        <div class="nav-wrapper">
-            <a href="#" class="back btn-floating btn-large blue darken-1">
-                <i class="large material-icons">keyboard_arrow_left</i>
-            </a>
-            <a id="logo-container" href="#" class="brand-logo center">Account
-                Info</a>
-        </div>
-    </nav>
-</div>
-<div class="container">
-    <ul class="collapsible" data-collapsible="accordion">
-        <li>
-            <div class="collapsible-header">
-                <span><i class="material-icons">done</i></span>
-                <span>My To Do's</span>
-            </div>
-            <div class="collapsible-body">
-                <ul class="collapsible" data-collapsible="accordion" id="to-do-list">
 
-                </ul>
-                </div>
-
-        </li>
-        <li>
-            <div class="collapsible-header">
-                <span><i class="material-icons">sort_all</i></span>
-                <span>Tasks I've Posted</span>
-            </div>
-            <div class="collapsible-body">
-                <ul class="collapsible" data-collapsible="accordion" id="posted-tasks">
-                    <!--
-                    <li>
-                        <div class="collapsible-header">
-                            <span><i class="material-icons">done_all</i></span>
-                            <span>Task 1</span>
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="row">
-                                <div class="col s6">
-                                    <p>
-                                        Task Title: MALK
-                                        <br>
-                                        Status: Finished
-                                    </p>
-                                </div>
-                                <div class="col s6" style="padding-top:25px;">
-                                    <a href="#" id="pay-button"
-                                       class="btn-large waves-effect waves-light blue darken-1 right">Pay</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            <span><i class="material-icons">clear</i></span>
-                            <span>Task 2</span>
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="row">
-                                <div class="col s6">
-                                    <p>
-                                        Task Title: Walk dog
-                                        <br>
-                                        Status: Unassigned
-                                    </p>
-                                </div>
-                                <div class="col s6" style="padding-top:25px;">
-                                    <a href="#" id="pay-button"
-                                       class="btn-large waves-effect waves-light blue darken-1 right">See Offers</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header">
-                            <span><i class="material-icons">clear</i></span>
-                            <span>Task 3</span>
-                        </div>
-                        <div class="collapsible-body">
-                            <div class="row">
-                                <div class="col s6">
-                                    <p>
-                                        Task Title: Clean house
-                                        <br>
-                                        Status: In Progress
-                                        <br>
-                                        <a href="#"><i class="material-icons">email</i></a>
-                                        <a href="#"><i class="material-icons">phone</i></a>
-                                    </p>
-                                </div>
-                                <div class="col s6" style="padding-top:25px;">
-                                    <a href="#" id="pay-button"
-                                       class="btn-large waves-effect waves-light blue darken-1 right disabled">Pay</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    -->
-                </ul>
-            </div>
-        </li>
-    </ul>
-</div>
-</div>
-
-<div class = "login-screen" >
-        
-        <div class="container">
-        
-        <div class="row">
-        <div class="col s12">
-         <div class = "card taskr-logo">
-            <div class="card-content black-text">
-                <h1 class="card-title center-align" id="card-title" style = "font-size: 50px !important">taskr</h1>
-            </div>
-        </div>
-            <div class="row">
-            <form class="col s12">
-              <div class="card-panel hoverable"  id="login">
-              <div class="card-content black-text">
-              <div class="row">
-                <div class="input-field col s6">
-                  <input id="username" type="text">
-                  <label for="username">Username</label>
-                    <a class="login logwaves-effect waves-light btn blue darken-1">Signup</a>
-                    <br> 
-                    <a  class = "login" href="#" style="align: right">Login</a>
-                </div>
-                <div class="input-field col s6">
-                  <input id="password" type="password">
-                  <label for="password">Password</label>
-                </div>
-              </div>
-              </div>
-              </div>
-            </form>
-          
-            
-            </div>
-      </div>
-      </div>
-      </div>
-    
-</div>
-
-<div class = "new_task">
+<div class="account">
     <div class="navbar-fixed">
         <nav id="nav-bar" class="white" role="navigation">
             <div class="nav-wrapper">
-                <a href="#" class="back btn-floating btn-large blue darken-1">
+                <a href="#" class="back btn-floating btn-large blue darken-1 tooltipped"
+                   data-position="bottom" data-delay="75" data-tooltip="Back">
                     <i class="large material-icons">keyboard_arrow_left</i>
                 </a>
+                <a id="logo-container" href="#" class="brand-logo center">Account Info</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header">
+                    <span><i class="material-icons">done</i></span>
+                    <span>My To Do's</span>
+                </div>
+                <div class="collapsible-body">
+                    <ul class="collapsible" data-collapsible="accordion" id="to-do-list">
+
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="collapsible-header">
+                    <span><i class="material-icons">sort_all</i></span>
+                    <span>Tasks I've Posted</span>
+                </div>
+                <div class="collapsible-body">
+                    <ul class="collapsible" data-collapsible="accordion" id="posted-tasks">
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header active">
+                    <span>My Info</span>
+                </div>
+                <div class="collapsible-body" style="padding:25px;">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="user-name" type="text" class="validate">
+                                    <label id="user-name-label" data-error="invalid" class="active" for="user-name">Username</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="user-password" type="password" class="validate">
+                                    <label id="user-password-label" data-error="invalid" class="active" for="user-password">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="email" type="email" class="validate">
+                                    <label id="email-label" data-error="invalid" class="active" for="email">Email</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="phone" type="tel" class="validate">
+                                    <label id="phone-label" data-error="invalid" class="active" for="phone">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="right-align">
+                                <a href="#" id="update-info"
+                                   class="btn-large blue darken-1 white-text modal-action modal-close waves-effect waves-blue btn-flat">Update Info</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="login-screen">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col s12">
+                <div class="card taskr-logo">
+                    <div class="card-content black-text">
+                        <h1 class="card-title center-align" id="card-title">
+                            taskr
+                        </h1>
+                        <h6 id="card-logo">
+                            Your day. Done.
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="col s12" id="login-form" onsubmit="deezNuts();">
+                        <div class="card-panel hoverable" id="login">
+                            <div class="card-content black-text">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="username" type="text">
+                                        <label for="username">Username</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="password" type="password">
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <div class="signup col s6">
+                                        <div>Don't have an account? Hundreds of satisifed customers already use our web
+                                            app! Join the community
+                                            now!
+                                        </div>
+                                        <div><a class="login logwaves-effect waves-light btn blue darken-1">Signup</a>
+                                        </div>
+                                    </div>
+                                    <div class="col s6 right-align">
+                                        <div><a class="login login-button" href="#">Login</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="new_task">
+    <div class="navbar-fixed">
+        <nav id="nav-bar" class="white" role="navigation">
+            <div class="nav-wrapper">
+                <ul class="user-details">
+                    <li class="back">
+                        <a href="#" class="back btn-floating btn-large blue darken-1 tooltipped"
+                           data-position="bottom" data-delay="800" data-tooltip="Back">
+                            <i class="large material-icons">keyboard_arrow_left</i>
+                        </a>
+                    </li>
+                </ul>
                 <a id="logo-container" href="#" class="brand-logo center">New
-                    Task</a>
+                    Task
+                </a>
             </div>
         </nav>
     </div>
     <div class="container">
         <div class="row">
             <div class="col s8">
-                <ul class="collapsible" data-collapsible="accordion">
+                <ul class="collapsible popout" data-collapsible="accordion">
                     <li>
-                        <div class="collapsible-header">
+                        <div class="collapsible-header active">
                             <span><i class="material-icons">info</i></span>
                             <span>Enter Task Details Here</span>
                             <span><i class="material-icons right">add</i></span>
                         </div>
-                        <div class="collapsible-body"><input type = "text" id = "task-details"> </input></div>
+                        <div class="collapsible-body new-task-field">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="task-details" class="materialize-textarea" length="250"></textarea>
+                            <label for="task-details">Describe your task briefly.</label>
+                        </div>
 
                     </li>
                     <li>
                         <div class="collapsible-header">
                             <span><i class="material-icons">date_range</i></span>
-                            <span>Date & Time</span>
+                            <span>Task Deadline</span>
                             <span><i class="material-icons right">add</i></span>
                         </div>
-                        <div class="collapsible-body"><input type = "date" class="datepicker"></input><input placeholder="Time" type = "text" id = "task-date"> </input></div>
+                        <div class="collapsible-body new-task-field">
+                            <input placeholder="Click here to select a date" type="date" class="datepicker"
+                                   id="task-date">
+                            <label for="task-date">Please select the date you would like your task done by.</label>
+
+                            <div class="row">
+                                <div class="col s6">
+                                    <input placeholder="5:37" type="text" id="task-time">
+                                    <label for="task-time">Please input the time you would like your task done
+                                        by.</label>
+                                </div>
+                                <div class="col s6 center-align am-pm">
+                                    <div>
+                                        <input name="time" type="radio" id="am">
+                                        <label for="am">AM</label>
+                                    </div>
+                                    <div>
+                                        <input checked="checked" name="time" type="radio" id="pm">
+                                        <label for="pm">PM</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <div class="collapsible-header">
@@ -328,7 +264,14 @@
                             <span>Task Location</span>
                             <span><i class="material-icons right">add</i></span>
                         </div>
-                        <div class="collapsible-body"><input type = "text" id = "task-location"> </input></div>
+                        <div class="collapsible-body new-task-field">
+                            <input type="text" id="task-street">
+                            <label for="task-street">Street Address</label>
+                            <input type="text" id="task-city">
+                            <label for="task-city">City, State</label>
+                            <input type="text" id="task-zipcode">
+                            <label for="task-zipcode">Zipcode</label>
+                        </div>
                     </li>
                     <li>
                         <div class="collapsible-header">
@@ -336,18 +279,22 @@
                             <span>Suggested Offer</span>
                             <span><i class="material-icons right">add</i></span>
                         </div>
-                        <div class="collapsible-body"><input type = "text" id = "task-price"> </input></div>
+                        <div class="collapsible-body new-task-field">
+                            <input placeholder="$5.00" type="text" id="task-price">
+                            <label for="task-price">Suggest a reasonable price you are willing to pay for this
+                                task.</label>
+                        </div>
                     </li>
                 </ul>
                 <a href="#" id="task-it-button" class="btn-large waves-effect waves-light blue darken-1">Task it!</a>
             </div>
-            <div class="right col s4" style="padding-left:50px; padding-top:10px;">
-                <img style="width:400px;" src="http://i.kinja-img.com/gawker-media/image/upload/s--im2RKGlW--/c_fit,fl_progressive,q_80,w_636/1465365452008528046.gif">
+            <div class="advertisement right col s4">
+                <img style="width:400px;"
+                     src="http://i.kinja-img.com/gawker-media/image/upload/s--im2RKGlW--/c_fit,fl_progressive,q_80,w_636/1465365452008528046.gif">
             </div>
         </div>
     </div>
 </div>
-
 
 
 <!-- Scripts -->
