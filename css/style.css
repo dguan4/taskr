@@ -4,17 +4,92 @@ nav .brand-logo {
     font-family: 'Titillium Web', sans-serif;
 }
 
-.user{
-    float: right;
-    width: 50%;
-    text-align: right;
+.advertisement{
+    padding-left:50px;
+    padding-top:10px;
 }
 
-.material-icons{
+.am-pm{
+    margin-top:20px;
+    padding-right:20px;
+}
+
+.task-info-label{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.new-task-field{
+    margin-left:15px;
+    margin-right:20px;
+    padding-bottom:50px;
+}
+
+.user-details{
+    font-family: 'Titillium Web', sans-serif;
+    color: #444;
+}
+
+.user-details li{
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.signup{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.divider{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.login-button{
+    font-size: 125%;
+    margin-right:50px;
+}
+
+.back{
+    margin-left: 10px !important;
+}
+
+.nav-button{
+    padding-right:20px;
+    padding-left:20px;
+}
+
+.material-icons {
     color: black;
     vertical-align: middle;
 }
 
-#pay-button{
+#pay-button {
     margin: 0 auto;
+}
+
+.taskr-logo {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .7;
+}
+
+#card-title {
+    font-size: 100px !important;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+#card-logo {
+    font-size: 35px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
 }
